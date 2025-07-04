@@ -4,6 +4,11 @@ body {
   background: #f4f4f4;
   overflow-x: auto;
 }
+@media (max-width: 768px){
+  .container{
+    width: 95%;
+  }
+}
 
 .header {
   background: #b71c1c;
