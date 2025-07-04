@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JOB NATIONsjjns </title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1><span class="typewriter" id="typewriter"></span></h1>
+    <p>www.sarkariresult.com.cm</p>
+  </header>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="latestjob.html">Latest Job</a>
+    <a href="#">Admit Card</a>
+    <a href="#">Result</a>
+    <a href="#">Admission</a>
+    <a href="#">Syllabus</a>
+    <a href="#">Answer Key</a>
+    <a href="#">More</a>
+  </nav>
+
+  <main class="content">
+    <div class="notification-label">
+      🔴 <span class="blink">Live Update: New Jobs Posted!</span>
+    </div>
+
+    <div class="tile-container">
+      <section class="tile">
+        <h2>🎫 Admit Cards</h2>
+        <ul>
+          <li><a href="#">SSC CGL Tier I Admit Card 2025</a></li>
+          <li><a href="#">UP Police Constable Admit Card</a></li>
+          <li><a href="#">CTET July 2025 Admit Card</a></li>
+          <li><a href="#">Railway Group D Admit Card</a></li>
+        </ul>
+      </section>
+
+      <section class="tile">
+        <h2>🧾 Latest Jobs</h2>
+        <ul>
+          <li><a href="jobs/ssc.html">SSC CHSL Recruitment 2025</a></li>
+          <li><a href="jobs/BANK OF BARODA.HTML">Bank Of Baroda BOB LBO Recruitment 2025</a></li>
+          <li><a href="#">Delhi Police Head Constable</a></li>
+          <li><a href="#">IBPS Clerk Vacancy 2025</a></li>
+          <li><a href="jobs/drdo.html">DRDO RAC Scientist B Recruitment 2025</a></li>
+          <li><a href="jobs/ssccgl.html">SSC CGL 2025</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const text = "JOB NATION";
+    let index = 0;
+    const speed = 150;
+
+    function typeWriter() {
+      if (index < text.length) {
+        document.getElementById("typewriter").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>

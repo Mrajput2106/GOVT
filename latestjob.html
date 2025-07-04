@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JOB NATION </title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1><span class="typewriter" id="typewriter"></span></h1>
+    <p>www.sarkariresult.com.cm</p>
+  </header>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="latestjob.html">Latest Job</a>
+    <a href="#">Admit Card</a>
+    <a href="#">More</a>
+  </nav>
+   <main class="content">
+    <div class="notification-label">
+      🔴 <span class="blink">Live Update: New Jobs Posted!</span>
+    </div>
+    <script>
+    const text = "JOB NATION";
+    let index = 0;
+    const speed = 150;
+
+    function typeWriter() {
+      if (index < text.length) {
+        document.getElementById("typewriter").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+  <ul>
+    <li><a href="jobs/ssc.html">SSC CHSL</a></li>
+    <li><a href="jobs/BANK OF BARODA.HTML">Bank Of Baroda BOB LBO Recruitment 2025</a></li>
+    <li><a href="jobs/drdo.html">DRDO RAC Scientist B Recruitment 2025</a></li>
+    <li><a href="jobs/ssccgl.html">SSC CGL 2025</a></li>
+   
+  </ul>
+  </body>
+</html>
